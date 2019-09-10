@@ -4,13 +4,13 @@ exports.up = function(knex) {
       // id, primary key
       table.increments();
 
-      //VIN number
+      // VIN number
       table.string('vin').unique().notNullable();
 
       // Make
       table.string('make', 128).notNullable();
 
-      //Model
+      // Model
       table.string('model', 128).notNullable();
 
       // Mileage
